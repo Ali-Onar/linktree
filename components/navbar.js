@@ -1,6 +1,6 @@
+import { get } from '@vercel/edge-config';
 import styles from './navbar.module.css';
 import Link from 'next/link';
-import data from '../data.json';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -17,7 +17,8 @@ const iconMap = {
     Website: <WebAssetIcon style={{ verticalAlign: "middle" }} />,
   }
 
-function Navbar() {
+async function Navbar() {
+  const data = await get('data');
   return (
     <nav className={styles.navbar}>
       <div className={styles.links}>

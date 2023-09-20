@@ -1,6 +1,11 @@
 import { Analytics } from '@vercel/analytics/react';
 import './global.css';
 
+export const metadata = {
+  title: 'Simple Blog App',
+  description: 'Nextjs Simple Blog App',
+};
+
 export default function RootLayout({
     children,
   }) {

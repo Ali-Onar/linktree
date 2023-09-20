@@ -1,18 +1,15 @@
-import Head from 'next/head';
+import { get } from '@vercel/edge-config';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
-import data from '../data.json';
    
-export default function Page() {
+export default async function Page() {
+    const data = await get('data');
     const allPostsData = getSortedPostsData();
     return (
         <Layout home>
-            <Head>
-            <title>{data.name}</title>
-            </Head>
             <section className={utilStyles.headingMd}>
             <p>Hi! I am a Software Engineer.</p>
             <p>
