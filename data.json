@@ -1,0 +1,31 @@
+{
+    "name": "Ali Onar",
+    "avatar": "if you want -> image alt name",
+    "avatarUrl": "if you want -> image url",
+    "socials": [
+        {
+            "title": "Twitter",
+            "url": "https://twitter.com/alitncn"
+        },
+        {
+            "title": "Linkedin",
+            "url": "https://www.linkedin.com/in/ali-tunacan-onar/"
+        },
+        {
+            "title": "Youtube",
+            "url": "https://www.youtube.com/channel/UC0csCvyu_UTo8JyiO_5jfAQ"
+        },
+        {
+            "title": "Medium",
+            "url": "https://medium.com/@alitunacanonar"
+        },
+        {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/alionar60"
+        },
+        {
+            "title": "Website",
+            "url": "https://www.bilgeton.com/"
+        }
+    ]
+}
